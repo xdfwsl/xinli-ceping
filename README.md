@@ -1,4 +1,4 @@
-# 心理测评量表（静态站 · 内容加密）v2.2.0
+# 心理测评量表（静态站 · 内容加密）v2.3.0
 
 纯 HTML/CSS/JS 静态站，手机优先，无后端、无统计脚本，答题记录只存在浏览器本机。
 **全部页面正文、引擎、量表目录和题目数据都以 AES-256-GCM 密文发布**，仓库和线上只有密文；打开站点先输入访问密码，在浏览器内用 Web Crypto 解密后运行。密码不在仓库任何地方。
@@ -16,7 +16,7 @@ tools/            外壳模板 shell.html、gate.js 源文件
 src/              明文源文件 —— 已在 .gitignore 中，永远不要提交
   ├─ index.html scale.html records.html about.html
   ├─ js/app.js（答题与计分引擎） js/catalog.js（量表目录与分类）
-  ├─ data/<id>.js（每个量表一个文件：题目、选项、计分、来源、自测）
+  ├─ data/<id>.js（每个量表一个文件：题目、选项、计分、自测；来源与计分说明字段只存不显示，正文在 vault Projects\心理测评站）
   ├─ docs/如何新增量表.md
   └─ kdf_salt.hex（PBKDF2 的 salt，构建时自动生成并复用；不是秘密）
 ```
