@@ -20,7 +20,7 @@ build_encrypt.py v2.0.0 —— 把 src/ 下的明文站点构建为密码保护�
 """
 import argparse, base64, hashlib, hmac, json, os, re, secrets, shutil, sys, time
 
-__version__ = "2.3.0"
+__version__ = "2.3.1"
 
 try:
     from cryptography.hazmat.primitives.ciphers.aead import AESGCM
