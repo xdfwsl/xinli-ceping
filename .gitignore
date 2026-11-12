@@ -1,0 +1,6 @@
+# 明文源文件（题目、页面、引擎）绝不入库，只提交加密产物
+src/
+_work/
+*.zip
+__pycache__/
+.playwright*/

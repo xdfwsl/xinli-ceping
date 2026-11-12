@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="version" content="{{VERSION}}">
+<title>心理测评量表</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css?v={{VERSION}}">
+</head>
+<body>
+<div class="gate" id="gate" style="display:none">
+  <h1>心理测评量表</h1>
+  <p>本站内容已加密，请输入访问密码</p>
+  <input class="inp" id="pw" type="password" placeholder="访问密码" autocomplete="current-password">
+  <label><input type="checkbox" id="rem"> 记住本设备（下次免输密码）</label>
+  <button class="btn" id="go">进入</button>
+  <div class="err" id="err"></div>
+</div>
+<noscript><p style="text-align:center;color:#777">需要启用 JavaScript 才能使用本站。</p></noscript>
+<script src="js/gate.js?v={{VERSION}}"></script>
+<script src="enc/site.js?v={{BUILD}}"></script>
+<script>XLGATE.boot('{{PAGE}}');</script>
+</body>
+</html>
